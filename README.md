@@ -3,7 +3,7 @@
 ## Project Overview
 This application fulfills the Week 5 assignment requirements for building a real-time chat system using Socket.io. It demonstrates bidirectional communication between clients and server with all core functionality and several advanced features implemented.
 
-![Main Chat Interface](general_chat_page.png)
+![Main Chat Interface](home.png)
 
 ## Features Implemented
 
@@ -41,7 +41,7 @@ This application fulfills the Week 5 assignment requirements for building a real
 - Responsive design for all devices
 - Clean, intuitive user interface
 
-![Live Chat Example](chat_with_other_user.png)
+![Live Chat Example](chat with_other_user.png)
 
 ## Project Structure
 
