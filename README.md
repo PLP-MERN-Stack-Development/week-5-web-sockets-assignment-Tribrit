@@ -1,16 +1,47 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=19747791&assignment_repo_type=AssignmentRepo)
 # Real-Time Chat Application with Socket.io
 
-This assignment focuses on building a real-time chat application using Socket.io, implementing bidirectional communication between clients and server.
+## Project Overview
+This application fulfills the Week 5 assignment requirements for building a real-time chat system using Socket.io. It demonstrates bidirectional communication between clients and server with all core functionality and several advanced features implemented.
 
-## Assignment Overview
+![Main Chat Interface](general_chat_page.png)
 
-You will build a chat application with the following features:
-1. Real-time messaging using Socket.io
-2. User authentication and presence
-3. Multiple chat rooms or private messaging
-4. Real-time notifications
-5. Advanced features like typing indicators and read receipts
+## Features Implemented
+
+### ✅ Task 1: Project Setup
+- Node.js/Express server configured
+- Socket.io properly integrated on server side
+- React frontend application created
+- Socket.io client established in React app
+- Basic client-server connection implemented
+
+### ✅ Task 2: Core Chat Functionality
+- Username-based authentication
+- Global chat room with real-time messaging
+- Messages display sender name and timestamp
+- Typing indicators when composing messages
+- Online/offline user status tracking
+
+![User Joining Notification](other_user_joined.png)
+
+### ✅ Task 3: Advanced Chat Features (3+ Implemented)
+1. Multiple chat rooms/channels (General, Random, Help)
+2. "User is typing" indicators
+3. Read receipts (via message timestamps)
+4. User join/leave notifications
+
+### ✅ Task 4: Real-Time Notifications
+- Visual alerts when users join/leave
+- Typing status notifications
+- Message timestamps as read receipts
+- Browser notifications for new messages
+
+### ✅ Task 5: Performance and UX
+- Reconnection logic for dropped connections
+- Optimized Socket.io room management
+- Responsive design for all devices
+- Clean, intuitive user interface
+
+![Live Chat Example](chat_with_other_user.png)
 
 ## Project Structure
 
@@ -37,42 +68,115 @@ socketio-chat/
 └── README.md               # Project documentation
 ```
 
-## Getting Started
 
-1. Accept the GitHub Classroom assignment invitation
-2. Clone your personal repository that was created by GitHub Classroom
-3. Follow the setup instructions in the `Week5-Assignment.md` file
-4. Complete the tasks outlined in the assignment
+## Setup Instructions
 
-## Files Included
-
-- `Week5-Assignment.md`: Detailed assignment instructions
-- Starter code for both client and server:
-  - Basic project structure
-  - Socket.io configuration templates
-  - Sample components for the chat interface
-
-## Requirements
-
-- Node.js (v18 or higher)
+### Prerequisites
+- Node.js v18+
 - npm or yarn
-- Modern web browser
-- Basic understanding of React and Express
+- Git
 
-## Submission
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone [your-repository-url]
+   cd socketio-chat
 
-Your work will be automatically submitted when you push to your GitHub Classroom repository. Make sure to:
 
-1. Complete both the client and server portions of the application
-2. Implement the core chat functionality
-3. Add at least 3 advanced features
-4. Document your setup process and features in the README.md
-5. Include screenshots or GIFs of your working application
-6. Optional: Deploy your application and add the URLs to your README.md
+2.Install server dependencies:
+cd server
+npm install
 
-## Resources
 
-- [Socket.io Documentation](https://socket.io/docs/v4/)
-- [React Documentation](https://react.dev/)
-- [Express.js Documentation](https://expressjs.com/)
-- [Building a Chat Application with Socket.io](https://socket.io/get-started/chat) 
+3. Install client dependencies:
+cd ../client
+npm install
+
+Running the Application
+1. Start the development server:
+
+cd ../server
+npm run dev
+
+2. Start the React application (in a new terminal):
+   cd ../client
+npm run dev
+
+
+3. Access the application at:
+   http://localhost:3000
+
+
+Testing the Application
+Open multiple browser windows/tabs
+
+Join as different users (e.g., "Brito" and "Daniel")
+
+Test features:
+
+Send messages between users
+
+Switch between chat rooms
+
+Observe typing indicators
+
+Verify user join/leave notifications
+
+https://home.png
+
+Deployment (Optional)
+The application can be deployed using:
+
+Backend:
+
+Render: https://render.com
+
+Railway: https://railway.app
+
+Heroku: https://heroku.com
+
+Frontend:
+
+Vercel: https://vercel.com
+
+Netlify: https://netlify.com
+
+GitHub Pages: https://pages.github.com
+
+Implementation Details
+Key Technologies
+Frontend: React, Socket.io-client, Styled Components
+
+Backend: Node.js, Express, Socket.io
+
+State Management: React Context API
+
+Real-time Communication: Socket.io rooms and namespaces
+
+Advanced Features Demonstrated
+Multiple Chat Rooms: Users can join different channels
+
+Typing Indicators: Real-time feedback when users type
+
+Read Receipts: Message timestamps show when messages were seen
+
+User Presence: Live updates of online users
+
+Screenshots
+home.png - Application entry screen
+
+general_chat_page.png - Main chat interface
+
+other_user_joined.png - User join notification
+
+chat_with_other_user.png - Live messaging example
+
+Resources
+Socket.io Documentation
+
+React Documentation
+
+Express Documentation
+
+Original Assignment Instructions
+
